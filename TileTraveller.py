@@ -26,3 +26,19 @@ while beginning != (3,1):
         else:
             print('Not a valid direction!')
             beginning = beginning
+    if beginning == (1,2):
+        if direction == 'n' or direction =='N':
+            beginning = (1,3) 
+            print('You can travel: (E)ast or (S)outh.')
+            direction = input('Direction: ')
+        elif direction == 'E' or direction =='e':
+            beginning = (2,2)  
+            print('You can travel: (S)outh or (W)est.')
+            direction = input('Direction: ')
+        elif direction == 's' or direction =='S':
+            beginning = (1,1)
+            print('You can travel: (N)orth.')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
