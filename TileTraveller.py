@@ -42,3 +42,77 @@ while beginning != (3,1):
             print('Not a valid direction!')
             beginning = beginning
             direction = input('Direction: ')
+    if beginning == (1,3):
+        if direction == 's' or direction == 'S':
+            beginning = (1,2)
+            print('You can travel: (N)orth or (E)ast or (S)outh.')
+            direction = input('Direction: ')
+        elif direction == 'e' or direction =='E':
+            beginning = (2,3) 
+            print('You can travel: (E)ast or (W)est.')
+            direction = input('Direction: ')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (2,2):
+        if direction == 's' or direction == 'S':
+            beginning = (2,1)
+            print('You can travel: (N)orth.')
+            direction = input('Direction: ')
+        elif direction == 'w' or direction == 'W':
+            beginning = (1,2)  
+            print('You can travel: (N)orth or (E)ast or (S)outh.')
+            direction = input('Direction: ')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (2,1):   
+        if direction == 'n' or direction =='N':
+            beginning = (2,2)  
+            print('You can travel: (S)outh or (W)est.')
+            direction = input('Direction: ')    
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (2,3):       
+        if direction == 'e' or direction =='E':
+            beginning = (3,3)  
+            print('You can travel: (S)outh or (W)est.')
+            direction = input('Direction: ')
+        elif direction == 'w' or direction =='W':
+            beginning = (1,3)
+            print('You can travel: (E)ast our (S)outh.')
+            direction = input('Direction: ')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (3,3): 
+        if direction == 'w' or direction =='W':
+            beginning = (2,3)   
+            print('You can travel: (E)ast or (W)est.')
+            direction = input('Direction: ')
+        elif direction == 's' or direction == 'S':
+            beginning = (3,2) 
+            print('You can travel: (N)orth or (S)outh.')
+            direction = input('Direction: ')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (3,2):  
+        if direction == 's' or direction == 'S':
+            beginning = (3,1) 
+        elif direction == 'n' or direction == 'N':
+            beginning = (3,3)  
+            print('You can travel: (S)outh or (W)est.')
+            direction = input('Direction: ')
+        else:
+            print('Not a valid direction!')
+            beginning = beginning
+            direction = input('Direction: ')
+    if beginning == (3,1):
+        print('Victory!')
